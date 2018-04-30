@@ -20,11 +20,18 @@
     background-color: #A2B15A;
 }
 
+.work-history-column {
+    background-color: #C84F2D;
+}
+
+.personal-info-column {
+    background-color: #f0f0f0;
+}
+
 /*------------Content Section------------*/
 
 .section-column {
     padding: 20px 30px 0 30px;
-    background: #fafafa;
 }
 
 .section-column p {
@@ -33,17 +40,20 @@
 
 .section-heading {
     font-family: 'Gothic A1', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
-/*------------Content - About Section------------*/
+/*------------Content - Home page - About Section------------*/
 
-.about-heading, .contact-heading {
+.about-heading,
+.contact-heading,
+.skills-heading {
     font-family: 'Gothic A1', sans-serif;
 }
 
-.about-section {
-    margin-bottom: 20px;
+.about-section,
+.skills-section {
+    margin-bottom: 30px;
 }
 
 .about-icon {
@@ -51,11 +61,7 @@
     color: #B02032;
 }
 
-/*------------Content - Personal Info Section------------*/
-
-.personal-info-column {
-    background-color: #f0f0f0;
-}
+/*------------Content - Home page - Personal Info Section------------*/
 
 .personal-section {
     margin-bottom: 16px;
@@ -141,7 +147,6 @@ header {
 
 .menu .nav-link {
     box-sizing: border-box;
-
     font-family: 'Gothic A1', sans-serif;
     font-weight: 400;
     height: 120px;
@@ -172,6 +177,88 @@ header {
     border-bottom: 4px solid rgba(0, 0, 0, 0.5);
 }
 
+/*------------Content - CV Page - skills section------------*/
+
+.skills-icon {
+    font-size: 26px;
+    color: #C84F2D;
+}
+
+.skills-column {
+    padding-bottom: 32px;
+}
+
+.skills-column .progress {
+    height: 25px;
+    margin-bottom: 16px;
+    position: relative;
+    padding: 0;
+}
+
+.skills-column .progress-type {
+    font-weight: 900;
+    font-family: 'Gothic A1', sans-serif;
+    color: #fafafa;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 0px;
+    padding: 4px 20px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.progress-bars {
+    margin: 20px;
+}
+
+/*-----------Work history------------*/
+
+.work-history-column {
+    color: #fafafa;
+    padding-bottom: 30px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item h4 {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.timeline-item::before {
+    content: attr(dates);
+    position: absolute;
+    left: 2em;
+    top: 2em;
+    display: block;
+    font-family: 'Gothic A1', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 2.3em;
+    left: -6px;
+    display: block;
+    border-radius: 12px;
+    background-color: #fafafa;
+}
+
 /*------------Hover.css-----------------*/
 
 .hvr-shutter-out-vertical {
@@ -190,6 +277,7 @@ footer {
     color: #fafafa;
     min-height: 120px;
     padding-top: 10px;
+    margin: 0;
 }
 
 footer .social-links {
