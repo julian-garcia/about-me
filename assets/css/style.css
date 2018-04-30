@@ -1,0 +1,205 @@
+/*------------Color scheme------------*/
+
+.bg-color-dark {
+    background-color: #404953;
+}
+
+.menu-color-home {
+    background-color: #B02032;
+}
+
+.menu-color-cv {
+    background-color: #C84F2D;
+}
+
+.menu-color-contact {
+    background-color: #177E72;
+}
+
+.menu-color-download {
+    background-color: #A2B15A;
+}
+
+/* General layout */
+
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    float: none;
+    padding: 0 30px 30px;
+}
+
+/*------------Header section------------*/
+
+header {
+    margin: 0;
+}
+
+.heading {
+    margin: 0 0 0 50px;
+}
+
+.heading .name {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 46px;
+    margin: 50px 0 0 0;
+    color: #fafafa;
+}
+
+.heading .title {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 28px;
+    margin: 20px 0 90px 0;
+    color: #fafafa;
+}
+
+.logo {
+    background: url("/assets/images/julian.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 360px;
+    padding: 0;
+    position: relative;
+}
+
+.logo a {
+    font-family: 'Gothic A1', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo-overlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background-color: rgba(176, 32, 50, 0.5);
+    transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+}
+
+.logo:hover .logo-overlay {
+    opacity: 1;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu .nav-item {
+    padding: 0;
+    flex-basis: 50%;
+}
+
+.menu .nav-link {
+    box-sizing: border-box;
+
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+    height: 120px;
+    padding: 31px 0;
+    width: 100%;
+    color: #fafafa;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    transition: border-color .5s linear;
+}
+
+.menu .nav-link i {
+    display: block;
+    height: auto;
+    font-size: 26px;
+    color: #fafafa;
+}
+
+.menu .nav-link span {
+    padding-top: 5px;
+    letter-spacing: 2px;
+}
+
+.menu .nav-link:hover {
+    padding: 31px 0;
+    border-top: 4px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+}
+
+/*------------Hover.css-----------------*/
+
+.hvr-shutter-out-vertical {
+    background-color: transparent;
+}
+
+.hvr-shutter-out-vertical:before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*------------Footer-----------------*/
+
+footer {
+    font-family: 'Playfair Display', sans-serif;
+    background-color: #404953;
+    color: #fafafa;
+    min-height: 120px;
+    padding-top: 10px;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .social-links li {
+    display: inline-block;
+}
+
+footer .social-links i {
+    font-size: 22px;
+    line-height: 32px;
+    background: #999;
+    color: #fafafa;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+footer .social-links i:hover {
+    color: #B02032;
+    background: #fafafa;
+    border: 1px solid #B02032;
+}
+
+.footer-heading {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.footer-cv-link {
+    color: #fafafa;
+    font-size: 18px;
+    transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+}
+
+.footer-cv-link:hover {
+    color: #B02032;
+}
