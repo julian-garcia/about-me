@@ -20,16 +20,53 @@
     background-color: #A2B15A;
 }
 
-/* General layout */
-
-.row-table {
-    display: table;
-}
+/*------------Content Section------------*/
 
 .section-column {
-    display: table-cell;
-    float: none;
-    padding: 0 30px 30px;
+    padding: 20px 30px 0 30px;
+    background: #fafafa;
+}
+
+.section-column p {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.section-heading {
+    font-family: 'Gothic A1', sans-serif;
+    margin-bottom: 20px;
+}
+
+/*------------Content - About Section------------*/
+
+.about-heading, .contact-heading {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.about-section {
+    margin-bottom: 20px;
+}
+
+.about-icon {
+    font-size: 26px;
+    color: #B02032;
+}
+
+/*------------Content - Personal Info Section------------*/
+
+.personal-info-column {
+    background-color: #f0f0f0;
+}
+
+.personal-section {
+    margin-bottom: 16px;
+}
+
+.personal-detail {
+    margin-bottom: 32px;
+}
+
+.personal-detail .contact-heading {
+    font-size: 1rem;
 }
 
 /*------------Header section------------*/
@@ -126,6 +163,7 @@ header {
 .menu .nav-link span {
     padding-top: 5px;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .menu .nav-link:hover {
