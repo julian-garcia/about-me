@@ -259,6 +259,28 @@ header {
     background-color: #fafafa;
 }
 
+/*---------Contact-----------*/
+
+.contact-heading {
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+button[type="submit"] {
+    font-family: 'Gothic A1', sans-serif;
+    background-color: #177E72; 
+    width: 200px;
+}
+
 /*------------Hover.css-----------------*/
 
 .hvr-shutter-out-vertical {
