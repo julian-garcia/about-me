@@ -20,6 +20,14 @@
     background-color: #A2B15A;
 }
 
+.menu-color-interests {
+    background-color: #F84F2D;
+}
+
+.menu-color-github {
+    background-color: #24292e;
+}
+
 .work-history-column {
     background-color: #C84F2D;
 }
@@ -47,12 +55,14 @@
 
 .about-heading,
 .contact-heading,
-.skills-heading {
+.skills-heading,
+.interests-heading {
     font-family: 'Gothic A1', sans-serif;
 }
 
 .about-section,
-.skills-section {
+.skills-section,
+.interests {
     margin-bottom: 30px;
 }
 
@@ -175,6 +185,13 @@ header {
     padding: 31px 0;
     border-top: 4px solid rgba(0, 0, 0, 0.5);
     border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+}
+
+/*------------Content - CV Page - skills section------------*/
+
+.interests-icon {
+    font-size: 26px;
+    color: #F84F2D;
 }
 
 /*------------Content - CV Page - skills section------------*/
@@ -350,4 +367,16 @@ footer .social-links i:hover {
 
 .footer-cv-link:hover {
     color: #B02032;
+}
+
+/*Map styling*/
+
+#map {
+    overflow: visible !important;
+    position: static !important;
+    min-height: 300px;
+}
+
+#map .gm-style {
+    overflow:hidden;
 }
