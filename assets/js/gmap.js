@@ -4,8 +4,7 @@ function initMap() {
         zoom: 4,
         center: pos
     });
-    // var marker = new google.maps.Marker({position:pos, map:map});
-    
+
     var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     
     var locations = [

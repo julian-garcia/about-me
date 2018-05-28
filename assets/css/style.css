@@ -380,3 +380,13 @@ footer .social-links i:hover {
 #map .gm-style {
     overflow:hidden;
 }
+
+/*Github*/
+
+#gh-user-data {
+    min-height: 200px;
+}
+
+#gh-user-data #loader img {
+    width: 50px;
+}
