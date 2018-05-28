@@ -390,3 +390,7 @@ footer .social-links i:hover {
 #gh-user-data #loader img {
     width: 50px;
 }
+
+.repo-button {
+    margin-bottom:10px;
+}

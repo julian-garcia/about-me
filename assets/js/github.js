@@ -1,3 +1,7 @@
+$(document).ready(function() {
+    fetchGitHubInfo();
+});
+
 function userInfoHTML(user) {
     return `<h2>${user.name}
                 <span class="small-name">
@@ -14,7 +18,16 @@ function userInfoHTML(user) {
             </div>`;
 }
 
+function repoInfoHTML(repos) {
+    var listItemsHTML = repos.map(function(repo) {
+        return `<a role="button" class="btn btn-primary repo-button" href="${repo.html_url}" target="_blank">${repo.name}</a>`;
+    });
+    return listItemsHTML;
+}
+
 function fetchGitHubInfo(event) {
+    $("#gh-user-data").html(``);
+    $("#gh-repo-data").html(``);
     var username = $("#gh-username").val();
     
     if (!username) {
@@ -25,11 +38,14 @@ function fetchGitHubInfo(event) {
     $("#gh-user-data").html(`<div id="loader"><img src="/assets/images/loading.gif" alt="Loading..." /></div>`);
     
     $.when(
-        $.getJSON(`https://api.github.com/users/${username}`)
+        $.getJSON(`https://api.github.com/users/${username}?access_token=b575ab5aec15a7a60b74bfe95045256be615ba6b`),
+        $.getJSON(`https://api.github.com/users/${username}/repos?access_token=b575ab5aec15a7a60b74bfe95045256be615ba6b`)
     ).then(
-        function(response) {
-            var user_data = response;
+        function(firstResponse, secondResponse) {
+            var user_data = firstResponse[0];
+            var repo_data = secondResponse[0];
             $("#gh-user-data").html(userInfoHTML(user_data));
+            $("#gh-repo-data").html(repoInfoHTML(repo_data));
         }, 
         function(errorResponse) {
             if (errorResponse.status == 404) {
