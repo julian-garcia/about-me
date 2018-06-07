@@ -114,7 +114,7 @@ header {
 }
 
 .logo {
-    background: url("/assets/images/julian.jpg");
+    background: url("../images/julian.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -290,7 +290,7 @@ header {
     text-align: center;
 }
 
-.contact-form input, 
+.contact-form input,
 .contact-form textarea {
     margin-bottom: 20px;
     font-family: 'Playfair Display', sans-serif;
@@ -298,7 +298,7 @@ header {
 
 button[type="submit"] {
     font-family: 'Gothic A1', sans-serif;
-    background-color: #177E72; 
+    background-color: #177E72;
     width: 200px;
 }
 
@@ -402,5 +402,5 @@ footer .social-links i:hover {
 .gh-icon {
     color:#fff;
     font-size:120px;
-    
+
 }
