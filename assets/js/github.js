@@ -11,7 +11,7 @@ function userInfoHTML(user) {
             <div class="gh-content">
                 <div class="gh-avatar">
                     <a href="${user.html_url}" target="_blank">
-                    <img src="${user.avatar_url}" width="80" height="80" alt="${user.login}" />
+                    <img class="img-thumbnail" src="${user.avatar_url}" width="80" height="80" alt="${user.login}" />
                     </a>
                 </div>
                 <p>Followers: ${user.followers}, Following: ${user.following}<br> Public Repos: ${user.public_repos}</p>
@@ -50,6 +50,9 @@ function fetchGitHubInfo(event) {
         function(errorResponse) {
             if (errorResponse.status == 404) {
                 $("#gh-user-data").html(`<h4>No info found for ${username}</h4>`);
+            } else if (errorResponse.status == 403) {
+                var resetTime = new Date(errorResponse.getResponseHeader('X-RateLimit-Reset')*1000);
+                $("#gh-user-data").html(`<h4>Too many requests. Please wait until ${resetTime.toLocaleTimeString()}</h4>`);
             } else {
                 console.log(errorResponse);
                 $("#gh-user-data").html(`<h4>Error: ${errorResponse.reponseJSON.message}</h4>`);

@@ -36,6 +36,10 @@
     background-color: #f0f0f0;
 }
 
+.github-column {
+    background-color: #24292e;
+}
+
 /*------------Content Section------------*/
 
 .section-column {
@@ -384,7 +388,7 @@ footer .social-links i:hover {
 /*Github*/
 
 #gh-user-data {
-    min-height: 200px;
+    min-height: 150px;
 }
 
 #gh-user-data #loader img {
@@ -392,5 +396,11 @@ footer .social-links i:hover {
 }
 
 .repo-button {
-    margin-bottom:10px;
+    margin:0 10px 10px 0;
+}
+
+.gh-icon {
+    color:#fff;
+    font-size:120px;
+    
 }
